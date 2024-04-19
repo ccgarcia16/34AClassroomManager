@@ -4,7 +4,7 @@
   "description": "",
   "main": "server/index.js",
   "scripts": {
-    "seed": "node server/db/seed.js",
+    "seed": "node ./server/db/seed.js",
     "client:dev": "vite serve client",
     "server:dev": "JWT=JWT node --watch server",
     "server:dev:windows": "set JWT=JWT && node --watch server",
@@ -18,12 +18,14 @@
     "@types/react": "^18.0.37",
     "@types/react-dom": "^18.0.11",
     "@vitejs/plugin-react": "^4.0.0",
+    "prisma": "^5.12.1",
     "vite": "^4.3.9"
   },
   "dependencies": {
+    "@prisma/client": "^5.12.1",
     "@reduxjs/toolkit": "^1.9.5",
-    "dotenv": "^16.1.4",
-    "express": "^4.18.2",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
     "jsonwebtoken": "^9.0.0",
     "morgan": "^1.10.0",
     "pg": "^8.11.0",
